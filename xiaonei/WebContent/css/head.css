@@ -1,0 +1,39 @@
+.head1{
+	width:1000px;
+	height:101px;
+	background-color: #3B5888;
+	margin: 0 auto;
+}
+
+.head1 .img1{
+	width: 713px;
+	float: left;
+}
+
+.head1 .img2{
+	width:280px;
+	float: left;
+}
+
+.nav1{
+	float: right;
+	width: 290px;
+	height: 36px;
+}
+
+.nav1 li{
+	text-align: center;
+	font-size: 16px;
+	float:left;
+	list-style-type: none;
+	color: #c3cddf;
+	cursor: pointer;
+	height: 100%;
+	line-height: 200%;
+	width: 25%;
+}
+
+.nav1 li:hover{
+	color: #B62A2F;
+	background-color: #2C21E8;
+}
