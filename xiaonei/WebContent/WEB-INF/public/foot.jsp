@@ -9,8 +9,21 @@
 <title>my jsp 'foot.jsp'</title>
 </head>
 <body>
-<div>
-    
-</div>
+    <div class="foot1">
+        <span class="info">Epiphyllum Corporation@2009</span>
+	    <ul class="nav2">
+	        <li><a href="#">校内日志</a><span>&nbsp;|&nbsp;</span></li>
+	        <li><a href="#">关于</a><span>&nbsp;|&nbsp;</span></li>
+	        <li><a href="#">开放平台</a><span>&nbsp;|&nbsp;</span></li>
+	        <li><a href="#">招聘</a><span>&nbsp;|&nbsp;</span></li>
+	        <li><a href="#">客服</a><span>&nbsp;|&nbsp;</span></li>
+	        <li><a href="#">帮助</a><span>&nbsp;|&nbsp;</span></li>
+	        <li><a href="#">隐私声明</a></li>
+	    </ul>
+	    <div class="clean">
+	       <img class="img1" src="images/front/biaoshi.gif" />
+            <img class="img2" src="images/front/gangting_ico.gif" />
+	    </div>
+    </div>
 </body>
 </html>
