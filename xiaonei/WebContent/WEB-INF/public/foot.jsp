@@ -1,14 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="stylesheet" href="css/common.css" type="text/css" />
 <link rel="stylesheet" href="css/foot.css" type="text/css" />
-<title>my jsp 'foot.jsp'</title>
-</head>
-<body>
+
     <div class="foot1">
         <span class="info">Epiphyllum Corporation@2009</span>
 	    <ul class="nav2">
@@ -25,5 +19,3 @@
             <img class="img2" src="images/front/gangting_ico.gif" />
 	    </div>
     </div>
-</body>
-</html>

@@ -1,24 +1,20 @@
-<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
-  	<link rel="stylesheet" href="/xiaoneinew/css/head.css" type="text/css"/>
-  	<script type="text/javascript">
-	  <!-- 
-	function changeBG(o){
-		o.style.backgroundColor="#5C75AA";
-	}
-	function changeBG2(o){
-		o.style.backgroundColor="";
-	}
-	-->
-  </script>
-   <div class="head1">
-   <img class="img1" src="/xiaoneinew/images/front/top1.gif" />
-   <img class="img2" src="/xiaoneinew/images/front/top2.jpg" />
-   <img src="/xiaoneinew/images/front/xnw3.jpg" style="float: left;"/>
-   <ul class="navi1">
-   <li onmouseover="changeBG(this)" onmouseout="changeBG2(this)"><a class="anavi" href="/xiaoneinew/register.do?flag=regUI">注册</a></li>
-   <li onmouseover="changeBG(this)" onmouseout="changeBG2(this)"><a class="anavi" href="#">设为首页</a></li>
-   <li onmouseover="changeBG(this)" onmouseout="changeBG2(this)"><a class="anavi" href="#">加入收藏</a></li>
-   <li onmouseover="changeBG(this)" onmouseout="changeBG2(this)"><a class="anavi" href="#">帮助</a></li>
-   </ul>
-   </div>
-   
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<title>首页</title>
+</head>
+<body>
+    <!-- 引入head.jsp页面 -->
+    <jsp:include page="head.jsp"></jsp:include>
+    <div class="main">
+    </div>
+    <!-- 引入foot.jsp页面 -->
+    <jsp:include page="foot.jsp"></jsp:include>
+    
+</body>
+</html>

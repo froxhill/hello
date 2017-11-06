@@ -7,6 +7,6 @@
 <title>即将跳转....</title>
 </head>
 <body>
-<jsp:forward page="/WEB-INF/public/index.jsp"></jsp:forward>
+<jsp:forward page="/WEB-INF/public/register.jsp"></jsp:forward>
 </body>
 </html>

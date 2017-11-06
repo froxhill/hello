@@ -1,8 +1,81 @@
 .main{
 	width: 1000px;
-	height: 700px;
+	height: 600px;
 	margin: 0 auto;
-	background-color: pink;
 }
 
-.
+.regLogin{
+	float: left;
+	width: 200px;
+	height: 600px;
+}
+/* 登陆表单 */
+.logForm{
+	line-height: 30px;
+	margin-top: 20px;
+	margin-left: 20px;
+	border-bottom: 1px solid #808080;
+	padding-bottom: 20px;
+	
+}
+
+/* 注册 */
+.reg, .mobile{
+	
+	margin-top: 10px;
+	margin-left: 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #808080;
+}
+
+/* 手机登陆 */
+
+.sub{
+	color: white;
+	font-size: 16px;
+	background-color: #3B5888;
+	padding: 3px 20px;
+}
+
+/* 标志图片 */
+.banner{
+	text-align:center;
+	width: 800px;
+	float: left;
+}
+/* 校内介绍 */
+.intro{
+	float: left;
+	margin-left: 40px;
+}
+
+.intro li{
+	line-height: 20px;
+}
+/* 第二个注册入口 */
+.reg2{
+	float: right;
+	margin-right: 20px;
+	margin-top: 40px;
+	text-align: center;
+}
+
+/* 找朋友 */
+
+.friend{
+	float: left;
+    width: 775px;
+    margin-left: 25px;
+    border-bottom: 1px solid #808080;
+    padding-bottom: 10px;
+}
+
+/* 建议 */
+.advice{
+	width:785px;
+	margin-left: 15px;
+	float: left;
+	line-height: 20px;
+}
+
+
