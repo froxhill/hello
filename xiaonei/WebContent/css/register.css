@@ -1,0 +1,27 @@
+/* 注册主体框 */
+.reg_main{
+	margin: 0 auto;
+	background-color: #899;
+	height: 700px;
+	width: 1000px;
+}
+/* 主体清单 */
+.reg_item{
+	height: 700px;
+	width: 270px;
+	float: left;
+	background-color: pink;
+}
+/* 清单图片 */
+.reg_item_img{
+	float: right;
+}
+
+/* 注册表格 */
+.reg_table{
+	float: left;
+	width: 725px;
+	margin-left: 5px;
+	background-color: green;
+	height: 700px;
+}
