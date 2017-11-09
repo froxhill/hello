@@ -1,7 +1,6 @@
 /* 注册主体框 */
 .reg_main{
 	margin: 0 auto;
-	background-color: #899;
 	height: 700px;
 	width: 1000px;
 }
@@ -10,7 +9,6 @@
 	height: 700px;
 	width: 270px;
 	float: left;
-	background-color: pink;
 }
 /* 清单图片 */
 .reg_item_img{
@@ -22,6 +20,25 @@
 	float: left;
 	width: 725px;
 	margin-left: 5px;
-	background-color: green;
 	height: 700px;
 }
+/* 表格边框 */
+.reg_table table{
+	line-height: 30px;
+	width: 700px;
+    border-collapse: collapse;
+}
+/* 表格及表单元边框 */
+table,tr,td{
+	border: 1px solid transparent;
+}
+/* 控制表格第一列 */
+tr td:nth-child(1){
+	width: 110px;
+	text-align: right;
+	padding-right: 10px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #808080;
+}
+

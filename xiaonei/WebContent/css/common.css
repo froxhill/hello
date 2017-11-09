@@ -34,3 +34,23 @@ body{
 	font-weight: bold;
 	font-size: 20px;
 }
+.button1{
+	background-color: #fff;
+	cursor: hand;
+	width: 161px;
+	height: 41px;
+    background-image: url(../images/front/regbtn.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    border:none;
+}
+/* 提示文字模版样式 */
+.hintspan{
+	background-color: #FFFFCD;
+	font-size: 12px;
+	padding: 3px;
+	width: 220px;
+	height: 14px;
+	border: 3px #E7C437 solid;
+}

@@ -23,24 +23,108 @@
             <table>
                 <tr>
                     <td>真实姓名:</td>
-                    <td><input type="text" name="??" /></td>
+                    <td><input type="text" name="name" /></td>
+                    <td><span class="hintspan">请输入真实姓名</span></td>
+                </tr>
+                <tr>
+                    <td>性别:</td>
+                    <td><input type="radio" name="sex"  />男<input type="radio" name="sex" checked="checked"/>女</td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td>性别</td>
-                    <td><input type="radio" name="??"></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>身份</td>
+                    <td>身份:</td>
                     <td>
-                        <select name="" id="" multiple="multiple">
+                        <select name="identify" id="" multiple="multiple">
                             <option value="">已工作</option>
                             <option value="" selected>大学生</option>
                             <option value="">中学生/中专技校</option>
                             <option value="">以上都不是</option>
                         </select>
                     </td>
+                    <td></td>
+                </tr>
+                </tr>
+                <!-- 考虑到已经工作的情况 -->
+                <tr>
+                    <td>居住地:</td>
+                    <td>
+                        <select name="province">
+                            <option>——省份——</option>
+                            <option>四川省</option>
+                            <option>山东省</option>
+                            <option>重庆市</option>
+                        </select>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <select name="city">
+                            <option>——城市——</option>
+                            <option>成都市</option>
+                            <option>广元市</option>
+                            <option>自贡市</option>
+                        </select>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>公司:</td>
+                    <td><input type="text" name="corp"/></td>
+                    <td></td>
+                <!-- 考虑到已经工作的情况 -->
+                <!-- 考虑大学生要输入的特别信息 -->
+
+                <tr>
+                    <td>类型:</td>
+                    <td>
+                        <select name="level">
+                            <option value="">大学生</option>
+                            <option value="">硕士</option>
+                            <option value="">博士</option>
+                        </select>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>大学:</td>
+                    <td><input type="text" name="collage" /></td>
+                    <td></td>
+                </tr>
+                <!-- 考虑大学生要输入的特别信息 -->
+                <tr>
+                    <td>电子邮箱:</td>
+                    <td>
+                        <input type="text" name="email" /><br/>
+                        <img src="images/front/tanhao.png" alt="" />
+                        如果没有邮箱，请注册<a href="#">Hotmail</a>邮箱
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>设置密码:</td>
+                    <td><input type="password" name="password"/></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>确认密码:</td>
+                    <td><input type="password" name="pass"/></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>验证码:</td>
+                    <td>请输入以下验证码，看不清换一张？</td>
+                    <td>[1234]</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" name="submit" value="" class="button1" /></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="confirm"/>我已阅读并同意遵守<a href="#">校内网服务条款</a></td>
                     <td></td>
                 </tr>
             </table>
