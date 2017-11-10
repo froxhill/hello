@@ -6,6 +6,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="stylesheet" type="text/css" href="css/register.css" />
 <link rel="stylesheet" type="text/css" href="css/common.css" />
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+
+<script type="text/javascript">
+$(window).ready(function(){
+    document.getElementById("identify").addEventListener("change", function(){
+    	if(this.value=="worker"){
+    		$(".worktype").css("display","table-row");
+    		$(".collagetype").css("display","none");
+    	}else if(this.value=="collage"){
+    		$(".worktype").css("display","none");
+            $(".collagetype").css("display","table-row");
+    	}else{
+    		$(".worktype").css("display","none");
+    		$(".collagetype").css("display","none");
+    	}
+        
+    });
+});
+
+  
+
+
+
+</script>
+
 <title>首页</title>
 </head>
 <body>
@@ -28,24 +53,24 @@
                 </tr>
                 <tr>
                     <td>性别:</td>
-                    <td><input type="radio" name="sex"  />男<input type="radio" name="sex" checked="checked"/>女</td>
+                    <td><input id="nan" type="radio" name="sex"  /><label for="nan">男</label><input id="nv" type="radio" name="sex" checked="checked"/><label for="nv">女</label></td>
                     <td></td>
                 </tr>
                 <tr>
                     <td>身份:</td>
                     <td>
-                        <select name="identify" id="" multiple="multiple">
-                            <option value="">已工作</option>
-                            <option value="" selected>大学生</option>
-                            <option value="">中学生/中专技校</option>
-                            <option value="">以上都不是</option>
+                        <select name="identify" id="identify" multiple="multiple">
+                            <option value="worker" selected="selected">已工作</option>
+                            <option value="collage">大学生</option>
+                            <option value="mid">中学生/中专技校</option>
+                            <option value="either">以上都不是</option>
                         </select>
                     </td>
                     <td></td>
                 </tr>
                 </tr>
                 <!-- 考虑到已经工作的情况 -->
-                <tr>
+                <tr class="worktype">
                     <td>居住地:</td>
                     <td>
                         <select name="province">
@@ -57,7 +82,7 @@
                     </td>
                     <td></td>
                 </tr>
-                <tr>
+                <tr class="worktype">
                     <td></td>
                     <td>
                         <select name="city">
@@ -69,14 +94,14 @@
                     </td>
                     <td></td>
                 </tr>
-                <tr>
+                <tr class="worktype">
                     <td>公司:</td>
                     <td><input type="text" name="corp"/></td>
                     <td></td>
                 <!-- 考虑到已经工作的情况 -->
                 <!-- 考虑大学生要输入的特别信息 -->
 
-                <tr>
+                <tr class="collagetype">
                     <td>类型:</td>
                     <td>
                         <select name="level">
@@ -87,14 +112,14 @@
                     </td>
                     <td></td>
                 </tr>
-                <tr>
+                <tr class="collagetype">
                     <td>大学:</td>
                     <td><input type="text" name="collage" /></td>
                     <td></td>
                 </tr>
                 <!-- 考虑大学生要输入的特别信息 -->
                 <tr>
-                    <td>电子邮箱:</td>
+                    <td>电子邮箱:<br/>&nbsp;</td>
                     <td>
                         <input type="text" name="email" /><br/>
                         <img src="images/front/tanhao.png" alt="" />
