@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-11-13 16:30:32 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.xiaonei.beans.Usersenior" table="usersenior" catalog="xiaonei">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="senior" class="com.xiaonei.beans.Senior" fetch="select">
+            <column name="seniorSchId" />
+        </many-to-one>
+        <many-to-one name="users" class="com.xiaonei.beans.Users" fetch="select">
+            <column name="userId" />
+        </many-to-one>
+        <property name="seniorYear" type="java.lang.Integer">
+            <column name="seniorYear" />
+        </property>
+        <property name="grade1" type="string">
+            <column name="grade1" length="64" />
+        </property>
+        <property name="grade2" type="string">
+            <column name="grade2" length="64" />
+        </property>
+        <property name="grade3" type="string">
+            <column name="grade3" length="64" />
+        </property>
+    </class>
+</hibernate-mapping>
